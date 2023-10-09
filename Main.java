@@ -10,6 +10,8 @@ public class Main {
         //SumaCyfr();
         //Tablica10Liczb();
         //ZnakiNaParzystychIndeksach();
+        //StringBuilder();
+
 
 
     }
@@ -21,6 +23,23 @@ public class Main {
         Double l4 = scan.nextDouble();
 
         System.out.println("Suma: "+(l1+l2+l3+l4));
+    }
+
+    public static void StringBuilder(){
+        System.out.println("Podaj znak");
+        String znak = scan.next();
+        System.out.println("podaj wysokosc piramidy");
+        int wysokosc = scan.nextInt();
+        for(int i = 0; i < wysokosc; i++){
+            StringBuilder sb = new StringBuilder();
+            int liczbaSpacji = wysokosc - i - 1;
+            int liczbaZnakow = 2 * i + 1;
+            while(liczbaSpacji-- >0)
+                sb.append(' ');
+            while(liczbaZnakow-- >0)
+                sb.append(znak);
+            System.out.println(sb.toString());
+        }
     }
 
     public static void ZnakiNaParzystychIndeksach(){
