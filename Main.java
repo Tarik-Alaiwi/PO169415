@@ -11,10 +11,10 @@ public class Main {
         //Tablica10Liczb();
         //ZnakiNaParzystychIndeksach();
         //StringBuilder();
-        //palindromLiczb();
+        //PalindromLiczb();
     }
 
-    public static void palindromLiczb(){
+    public static void PalindromLiczb(){
         System.out.println("Podaj liczbę");
         String l1 = scanner.nextLine();
         String[] l2 = new String[l1.length()];
