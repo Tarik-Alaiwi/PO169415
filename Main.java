@@ -11,10 +11,25 @@ public class Main {
         //Tablica10Liczb();
         //ZnakiNaParzystychIndeksach();
         //StringBuilder();
-
-
-
+        //palindromLiczb();
     }
+
+    public static void palindromLiczb(){
+        System.out.println("Podaj liczbę");
+        String l1 = scanner.nextLine();
+        String[] l2 = new String[l1.length()];
+        int j = 0;
+
+        for (int i = l1.length() - 1; i >= 0; i--) {
+            l2[j] = String.valueOf(l1.charAt(i));
+            j++;
+        }
+
+        for (int i = 0; i < l1.length(); i++) {
+            System.out.print(l2[i]);
+        }
+    }
+    
     public static void SumaCzterechLiczb(){
         System.out.println("Podaj 4 liczby");
         Double l1 = scan.nextDouble();
