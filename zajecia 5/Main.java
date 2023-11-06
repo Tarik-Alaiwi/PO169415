@@ -3,6 +3,7 @@ public class Main {
         Employee a = new Employee("Arek", "Markowski");
         Hammer b = new Hammer("hammer");
         Samochod auto = new Samochod("Nissan");
-        System.out.println(KalkulatorRozszerzony.dodaj(5,5,5));
+        //System.out.println(KalkulatorRozszerzony.dodaj(5,5));
+        Programista p = new Programista();
     }
 }
